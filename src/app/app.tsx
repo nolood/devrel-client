@@ -1,10 +1,12 @@
-import { Button } from "@mui/material";
+import MuiProvider from "@/app/providers/mui-provider.tsx";
+import { RouterProvider } from "react-router-dom";
+import { router } from "@/shared/router/router.tsx";
 
 const App = () => {
   return (
-    <div>
-      <Button>вфывфывф</Button>
-    </div>
+    <MuiProvider>
+      <RouterProvider router={router} />
+    </MuiProvider>
   );
 };
 
